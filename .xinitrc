@@ -1,7 +1,7 @@
 #!/bin/bash
 
 xrdb ~/.Xresources
-#xmodmap ~/speedswapper
+xmodmap ~/.Xmodmap
 
 exec i3
 
