@@ -1,0 +1,9 @@
+"3.6 (created: 2012/12/24 13:05:56)
+
+noremap j 3j
+noremap k 3k
+set complete=Sbt
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+source! /Users/Silva/.vimperatorrc.local
+
+" vim: set ft=vimperator:
