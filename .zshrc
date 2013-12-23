@@ -42,17 +42,17 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git archlinux)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/toddbranch/.gem/ruby/2.0.0/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
 
 alias ..='cd ..'
 alias ..2='cd ..; cd ..'
 alias ..3='cd ..; cd ..; cd ..'
-
+alias "logout"="gnome-session-quit"
 function so()
 {
     source ~/.zshrc;
@@ -64,17 +64,7 @@ alias "E"="exit"
 
 alias "grep"="egrep"
 
-export DISPLAY=:0
-
-function enMouse() {
-    xinput set-int-prop 10 "Device Enabled" 8 1
-}
-
-function disMouse() {
-    xinput set-int-prop 10 "Device Enabled" 8 0
-}
-
-disMouse
+#export DISPLAY=:0
 
 function homeDisplay() {
     xrandr --output LVDS1 --auto
@@ -98,14 +88,9 @@ alias "datasheets"="cd ~/courses/site/ECE382/datasheets"
 alias "syncECE382"="rsync -r ~/courses root@oceanWeddingHost:"
 alias "build"="blah=$(pwd); cd ~/courses; node build.js; cd $blah"
 
-export HISTCONTROL=ignorespace
+#export HISTCONTROL=ignorespace
 
 alias ls='ls -a --color=auto'
-
-function sprunge()
-{
-    $@ | curl -F 'sprunge=<-' http://sprunge.us;
-}
 
 function cl()
 {
@@ -117,9 +102,3 @@ function mkcd() {
     cd $1
 }
 
-alias blank="xset dpms force off"
-
-function clone-fork()
-{
-    git clone https://github.com/toddbranch/$@
-}
