@@ -29,6 +29,6 @@ set textwidth=79
 set relativenumber
 set ruler
 set nolist
-set dictionary=/usr/share/dict/cracklib-small
+set dictionary=/usr/share/dict/american-english
 set thesaurus=/home/ryguy/.vim/mthesaur.txt
 imap <D-space> <Esc>
