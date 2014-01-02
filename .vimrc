@@ -16,7 +16,7 @@ Bundle 'https://github.com/garbas/vim-snipmate.git'
 
 filetype plugin indent on
 let g:tex_flavor='latex'
-let g:Tex_ViewRule_pdf = '/usr/bin/okular'
+let g:Tex_ViewRule_pdf = '/usr/bin/evince'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats = 'pdf'
 let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
