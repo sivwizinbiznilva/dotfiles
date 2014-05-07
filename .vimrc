@@ -14,6 +14,7 @@ Bundle 'desert256.vim'
 Bundle 'Wombat'
 Bundle 'https://github.com/garbas/vim-snipmate.git'
 
+au BufRead,BufNewFile *.md set filetype=markdown
 filetype plugin indent on
 let g:tex_flavor='latex'
 let g:Tex_ViewRule_pdf = '/usr/bin/okular'
