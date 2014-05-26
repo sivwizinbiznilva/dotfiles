@@ -38,7 +38,7 @@ function so()
 }
 
 set -o vi
-source todo_completion
+source ~/todo_completion
 #source ~/.git-prompt.sh
 PATH=$PATH:$HOME/.rvm/bin:/usr/local/sbin # Add RVM to PATH for scripting
 #PS1='\W$(__git_ps1 " (%s)")\$ '
