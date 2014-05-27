@@ -50,7 +50,7 @@ UNDERLINE=$(tput smul)
 # unstaged and untracked symbols are shown, too (see above)
 # this prompt uses the short colour codes defined above
  
-PS1='${MAGENTA}\W${WHITE}`__git_ps1 " (%s)"`$ '
+PS1='${MAGENTA}\w${WHITE}`__git_ps1 " (%s)"`$ '
 #PS1='${GREEN}\u${BLACK}@${CYAN}\h:${MAGENTA}\w${WHITE}`__git_ps1 " (%s)"`$ '
 # this is a cyan username, @ symbol and host, magenta current working directory and white git branch
 # it uses the shorter , but visibly more complex, codes for text colours (shorter because the colour code definitions aren't needed)
